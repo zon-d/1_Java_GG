@@ -48,7 +48,6 @@ public class VariableExample6 {
 			System.out.printf("%.2f + %.2f = %.2f \n" , input3, input4, input3 + input4);
 			
 			
-			
 			System.out.print("이름을 입력해주세요 : ");
 			String name = sc.next(); // 다음 입력되는 단어 하나를 name 변수에 저장
 									 // (단어 : 띄어쓰기 없는 문자열)

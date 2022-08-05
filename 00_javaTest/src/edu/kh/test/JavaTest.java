@@ -20,6 +20,16 @@ public class JavaTest {
 		System.out.println("println()은 한 줄 출력입니다.");
 		System.out.print("안녕하세요!\n");
 		System.out.println(100 + 200 + 300);
+		
+		System.out.println("git 쉽지 않죠?");
+		System.out.println("git 연습 많이 해야 됩니다!");
+		
+		
+		
+		
+		
+		
+		
 		System.out.print(a+"\n");
 		System.out.printf("a는 %d이다.\n",a);
 	}

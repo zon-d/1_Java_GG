@@ -53,6 +53,7 @@ public class VariableExample5 {
 		System.out.println("새로운 코드");
 		int jjy = 26;
 		
+		System.out.println(jjy + " is my age.");
 		
 	}
 	

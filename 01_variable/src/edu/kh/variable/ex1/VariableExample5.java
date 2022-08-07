@@ -55,6 +55,12 @@ public class VariableExample5 {
 		
 		System.out.println(jjy + " is my age.");
 		
+		
+		System.out.println("깃허브-이클립스 사용방법 복습중");
+
+	
+	
+	
 	}
 	
 }

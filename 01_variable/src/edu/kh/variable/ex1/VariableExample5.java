@@ -57,7 +57,11 @@ public class VariableExample5 {
 		
 		
 		System.out.println("깃허브-이클립스 사용방법 복습중");
-
+		
+		System.out.println("무엇을 하지");
+		
+		string 1 = Baby
+				
 	
 	
 	

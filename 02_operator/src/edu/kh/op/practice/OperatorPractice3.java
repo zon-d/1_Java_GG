@@ -26,6 +26,10 @@ public class OperatorPractice3 {
 		//String result3 = (input3 = 0) ;
 		//System.out.println(result3);
 		
+		
+		
+		
+		
 	}
 	
 	

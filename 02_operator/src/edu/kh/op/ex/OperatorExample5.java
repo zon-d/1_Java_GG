@@ -1,5 +1,9 @@
 package edu.kh.op.ex;
 
+
+import java.util.Scanner;
+
+
 public class OperatorExample5 {
 	public static void main(String[] args) {
 		
@@ -24,6 +28,35 @@ public class OperatorExample5 {
 		
 		a %= 2; // a = a % 2
 		System.out.println("a를 2로 나눴을 때의 나머지 : " + a ); // 0
+		
+		
+		// 삼항 연산자 : 조건식 ? true인 경우 : false 인 경우
+		
+		// * 조건식 : 연산 결과가 true/false인 식
+		//				(비교, 논리, 논리 부정)
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		// 입력 받은 정수가 짝수인지, 홀수인지 판별
+		
+		// ex)
+		// 정수 입력 : 4
+		// 짝수 입니다.
+		
+		// 정수 입력 : 5
+		// 홀수 입니다.
+
+		
+		System.out.print("정수 입력 : ");
+		
+		int input = sc.nextInt();
+		
+							//조건식			? true인 경우		:false인 경우
+		String result = (input % 2 == 0)  ? "짝수 입니다." : "홀수 입니다.";
+		
+		System.out.println(result);
+		
 		
 		
 		

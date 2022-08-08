@@ -25,7 +25,14 @@ public class OperatorExample3 {
 	      System.out.println("-------------------------------------");
 	      
 	      
-	      System.out.println();
+	      System.out.println( 4 % 2 == 0);
+	      // 4를 2로 나눴을 때 나머지가 0과 같은가?
+	      
+	      System.out.println( 222 % 2 == 0);
+	      
+	      
+	      
+	      
 	      
 	      
 	      

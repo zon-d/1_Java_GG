@@ -60,7 +60,7 @@ public class VariableExample5 {
 		
 		System.out.println("무엇을 하지");
 		
-		string 1 = Baby
+		
 				
 	
 	

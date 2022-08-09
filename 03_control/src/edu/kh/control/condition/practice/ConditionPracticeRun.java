@@ -9,9 +9,9 @@ public class ConditionPracticeRun {
 		
 //		cp.practice1();
 //		cp.practice2();
-		cp.practice3();
-		
-		
+//		cp.practice3();
+//		cp.practice4();
+		cp.practice5();
 		
 		
 	}

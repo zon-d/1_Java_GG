@@ -170,7 +170,7 @@ public class ConditionPractice {
 		
 		if(attendance <= 20 * (1 - 0.3) ) { // 14번 이하 출석 했을 경우
 			System.out.print("Fail [출석 횟수 부족] (" + (int)attendance + "/20)");
-														//소수점 버림 처리
+														//소수점 버림 처리+
 		
 		}else { // 출석 만족					
 				System.out.printf("중간 고사 점수(20) : %.1f \n", midTerm);

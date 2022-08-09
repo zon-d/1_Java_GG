@@ -1,5 +1,6 @@
 package edu.kh.control.condition;
 
+import java.util.Scanner;
 
 // 코드를 실행시키는 부분(시키는 사람)
 public class ConditionRun {
@@ -25,7 +26,16 @@ public class ConditionRun {
 //			switchEx.ex1();
 //			switchEx.ex2();
 //			switchEx.ex3();
-			switchEx.ex4();
+//			switchEx.ex4();
+//			switchEx.ex5();
+			
+		
+			
+			
+			
+			
+			
+			
 	}
 	
 	

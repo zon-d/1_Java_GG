@@ -91,7 +91,6 @@ public class ForExample {
 		// (num1 부터 num2까지)
 		// 단, 첫 번째 입력이 두 번째 입력보다 작아야 한다.
 		
-		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("정수1 입력 : ");
 		int num1 = sc.nextInt();

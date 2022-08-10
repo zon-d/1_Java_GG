@@ -23,7 +23,7 @@ public class LoopRun {
 //		forEx.ex15();
 //		forEx.ex16();
 //		forEx.ex17();
-		forEx.ex18();
+//		forEx.ex18();
 		
 		
 		

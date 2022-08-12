@@ -12,6 +12,13 @@ public class ArrayExampleRun {
 //		arrayEx.ex4();
 //		arrayEx.ex5();
 //		arrayEx.ex6();
-		arrayEx.ex7();
+//		arrayEx.ex7();
+//		arrayEx.ex8();
+//		arrayEx.creatLotto();
+//		arrayEx.ex9();
+//		arrayEx.ex10();
+		arrayEx.ex11();
+		
+		
 	}
 }

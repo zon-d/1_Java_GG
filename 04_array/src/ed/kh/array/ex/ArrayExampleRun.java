@@ -17,7 +17,14 @@ public class ArrayExampleRun {
 //		arrayEx.creatLotto();
 //		arrayEx.ex9();
 //		arrayEx.ex10();
-		arrayEx.ex11();
+//		arrayEx.ex11();
+		
+		ArrayExample2 arryEx2 = new ArrayExample2();
+		
+//		arryEx2.ex1();
+//		arryEx2.ex2();
+//		arryEx2.ex3();
+		arryEx2.ex4();
 		
 		
 	}

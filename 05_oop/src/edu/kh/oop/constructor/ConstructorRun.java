@@ -20,8 +20,11 @@ public class ConstructorRun {
 		//    public Member(){} // Member 클래스에 자동 추가
 		
 		Member member5 = new Member("member22", "pass22@", "01022223333", 33);
+								  // -> 전달 인자, 인자(Argument)
 		
-		
+		Member member6 = new Member("아무거나", "안알랴줌", "010-2222-3333", 33);
+						
+		Member member7 = new Member("member22", "pass2@", "010-2222-3333", 33);
 				
 		
 		System.out.println("프로그램 종료");

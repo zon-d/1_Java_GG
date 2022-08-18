@@ -24,7 +24,7 @@ public class ArrayExampleRun {
 //		arryEx2.ex1();
 //		arryEx2.ex2();
 //		arryEx2.ex3();
-		arryEx2.ex4();
+//		arryEx2.ex4();
 		
 		
 	}

@@ -348,29 +348,5 @@ public class BranchExample {
 				
 	}			
 			
-}			
-			
-			
+}
 		
-	
-
-		
-		
-		
-	
-	
-
-
-		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

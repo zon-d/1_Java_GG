@@ -51,7 +51,7 @@ public class User {
 		return userId;
 	}
 	
-	public String getuserPw() {
+	public String getUserPw() {
 		return userPw;
 	}
 	
@@ -63,7 +63,7 @@ public class User {
 		return userAge;
 	}
 	
-	public char getuerGender() {
+	public char getUserGender() {
 		return userGender;
 	}
 }

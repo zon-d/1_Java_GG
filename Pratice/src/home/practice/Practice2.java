@@ -13,23 +13,16 @@ public class Practice2 {
     //  나머지가 0인 경우가 있다면 : 소수 아님
     //  나머지가 0인 경우가 없다면 : 소수다.
 	
-		boolean flag = true;
-		
-	System.out.print("소수를 입력하세요 : ");
+	
+	System.out.println("소수를 입력하세요 : ");
 	int input = sc.nextInt();
 	
-	for(int i=2 ; i<input ; i++) {
-		if(input % 2 == 0) {
-			System.out.println(input + "은 소수가 아닙니다.");
-			flag = false;
-			break;
-			
-		}
-	}if(flag) {
-		System.out.println(input + "은 소수입니다.");
+	for(int i=2 ; i<input ; )
+		
+	
+		
+		
+		
+		
 	}
-	
-
-	
-}
 }

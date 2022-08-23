@@ -56,7 +56,6 @@ public class Car {
 	@Override
 	public String toString() {
 		return "wheel : "+ wheel + " / seat : " + seat + " / fuel : " + fuel;
-		
 		// wheel : 4 / seat : 5 / fuel : 경유
 		
 	}

@@ -214,18 +214,31 @@ public class ArrayPractice {
 //				
 //			}
 //			
-//			public void practice11() {
-//				
-//				
-////			10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고
-////			1~10 사이의 난수를 발생시켜 중복된 값이 없게 배열에 초기화한 후 출력하세요.
-////
-////			[실행 화면]
-////			4 1 3 6 9 5 8 10 7 2
-//				
-//			
-//			}
-//			
+			public void practice11() {
+				
+				
+//			10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고
+//			1~10 사이의 난수를 발생시켜 중복된 값이 없게 배열에 초기화한 후 출력하세요.
+//
+//			[실행 화면]
+//			4 1 3 6 9 5 8 10 7 2
+				
+			System.out.print("발생한 난수 : ");
+			
+			int[] num = new int[10];
+			
+			for(int i=0 ; i<num.length ; i++) {
+				
+				int ran = (int)(Math.random()*11);
+				
+				System.out.print(ran + " ");
+				
+				num[i] = ran;
+			}
+			
+		
+		}
+			
 	public void practice12() {
 		
 		

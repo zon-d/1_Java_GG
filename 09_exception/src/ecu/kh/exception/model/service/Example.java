@@ -87,26 +87,26 @@ public class Example {
 			throw new IOException();
 			
 			
-		} catch(Exception e){
+		} catch (ArithmeticException e) { // 산술적 예외(Unchecked)
+			System.out.println("0으로 나눌 수 없습니다.");
+			
+			// Unreachable catch block for ArithmeticException.
+			// It is already handled by the catch block for Exception
+			
+		} catch(InputMismatchException e) { // catch문 다중 작성 가능!!!!!!!!!
+											// catch문이 여러 개면 위에서 부터 순서대로
+											// 발생한 예외를 검사하여
+											// 말맞은 매개변수를 가진 catch에서 처리한다
+			
+			// 스캐너를 이용한 입력 시 데이터 타입이 올바르지 않으면 발생하는 예외
+			// ex) sc.nextInt(); 를 통한 입력 시
+			//     정수가 아닌 값을 입력하면 발생
+			
+			System.out.println("정수만 입력해주세요.");
+			
+		} catch(Exception e) {
 			System.out.println("예외가 발생했습니다.");
 			
-//		} catch (ArithmeticException e) { // 산술적 예외(Unchecked)
-//			System.out.println("0으로 나눌 수 없습니다.");
-//			
-//			// Unreachable catch block for ArithmeticException.
-//			// It is already handled by the catch block for Exception
-//			
-//		} catch(InputMismatchException e) { // catch문 다중 작성 가능!!!!!!!!!
-//											// catch문이 여러 개면 위에서 부터 순서대로
-//											// 발생한 예외를 검사하여
-//											// 말맞은 매개변수를 가진 catch에서 처리한다
-//			
-//			// 스캐너를 이용한 입력 시 데이터 타입이 올바르지 않으면 발생하는 예외
-//			// ex) sc.nextInt(); 를 통한 입력 시
-//			//     정수가 아닌 값을 입력하면 발생
-//			
-//			System.out.println("정수만 입력해주세요.");
-//			
 		} finally {
 			// finally : catch 구문 수행 여부에 관계 없이
 			// 무조건 실행하는 구문
@@ -129,6 +129,34 @@ public class Example {
 		//    catch구문 매개변수의 자식 타입이면
 		//    부모 타입 예외 참조 변수 = 던져진 자식 객체
 		//    -> 다형성 (업캐스팅)이 적용되어 해당 catch문에서 처리된다.
+		
+	}
+	
+	public void ex4() {
+		
+		System.out.println("실행");
+		try {
+			ex5();
+		} catch (IOException e) {
+			// e.printStackTrace();
+			// e : 예외 객체 참조 변수
+			// StackTrace : 예외가 발생한 메서드를 따라가다
+		}
+		
+		
+	}
+	
+	public void ex5() throws IOException{
+		
+		ex6();
+		
+	}
+	
+	public void ex6() throws IOException {
+			// -> 해당 메서드에서 발생하는 IOException을
+			//    호출한 메서드로 던져버림 (책임 전가)
+		
+		throw new IOException();
 		
 	}
 }

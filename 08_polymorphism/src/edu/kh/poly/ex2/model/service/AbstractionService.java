@@ -1,9 +1,14 @@
 package edu.kh.poly.ex2.model.service;
 
+import java.util.Scanner;
+
 import edu.kh.poly.ex2.model.vo.Animal;
+import edu.kh.poly.ex2.model.vo.Calculator;
 import edu.kh.poly.ex2.model.vo.Fish;
 import edu.kh.poly.ex2.model.vo.HGD;
 import edu.kh.poly.ex2.model.vo.HSH;
+import edu.kh.poly.ex2.model.vo.JJYCalculator;
+import edu.kh.poly.ex2.model.vo.KH;
 import edu.kh.poly.ex2.model.vo.Person;
 
 public class AbstractionService {
@@ -83,6 +88,70 @@ public class AbstractionService {
 		// 부모 객체를 포함하지 않는다.
 		
 		
+		// 인터페이스 + 다형성 + 동적 바인딩
+		KH[] arr = new KH[2];
+		
+		arr[0] = new HSH(); // 업캐스팅
+		arr[1] = new HGD(); // 업캣팅
+		// 부모 타입 참조 = 자식 객체;
+		// 부모 : KH 인터페이스 == 인터페이스도 부모 참조 변수로 사용 가능
+		
+		System.out.println("--------------------------");
+		for(int i=0 ; i<arr.length ; i++) {
+			
+			arr[i].lesson();
+			// 정적 바인딩 : KH.lesson() (추상 메서드)
+			// 동적 바인딩 : 
+			// arr[0] -> HSH.lesson();
+			// arr[0] -> HGD.lesson();
+			
+		}
+		
 	}
+	
+	public void ex3() {
+		
+		Calculator cal = new JJYCalculator();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("[사칙연산]");
+		System.out.print("정수 1 : ");
+		int num1 = sc.nextInt();
+				
+		System.out.print("정수 2 : ");
+		int num2 = sc.nextInt();
+		
+		System.out.println( cal.plus(num1, num2));
+		System.out.println( cal.minus(num1, num2));
+		System.out.println( cal.multiple(num1, num2));
+		
+		if(num2 == 0) {
+			System.out.println("0으로 나눌 수 없습니다.");
+		}else {
+			System.out.println(cal.divide(num1, num2));
+		}
+		
+		System.out.println("----------------------");
+		
+		System.out.print("반지름 입력 : ");
+		double r = sc.nextDouble();
+		
+		System.out.print("원의 넓이 : " + cal.areaOfCircle(r));
+		
+		System.out.println("----------------------");
+		
+		System.out.print("a의 b제곱");
+		
+		System.out.print("a 입력 : ");
+		double a= sc.nextDouble();
+		
+		System.out.print("b 입력(정수) : ");
+		int b = sc.nextInt();
+		
+		System.out.println("결과 : " + cal.pow(a, b));
+				
+	}
+	
 
 }
